@@ -118,4 +118,3 @@ The following resources will be created:
 
 ## License
 
-Apache 2 Licensed. See [LICENSE](https://github.com/DNXLabs/terraform-aws-network/blob/master/LICENSE) for full details.
