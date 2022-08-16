@@ -1,8 +1,5 @@
 # terraform-aws-network
 
-[![Lint Status](https://github.com/DNXLabs/terraform-aws-network/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-network/actions)
-[![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-network)](https://github.com/DNXLabs/terraform-aws-network/blob/master/LICENSE)
-
 This module creates the basic network resources for a region.
 
 The following resources will be created:
@@ -22,21 +19,6 @@ The following resources will be created:
  - Network Access Control List (NACL) for all subnets
  - Database Subnet group - Provides an RDS DB subnet group resources
  - S3 VPC endpoint
-
-
-
-## Usage
-
-```hcl
-module "network" {
-  source = "git::https://github.com/DNXLabs/terraform-aws-network.git?ref=0.0.3"
-
-  vpc_cidr              = "10.1.0.0/16"
-  newbits               = 8             # will create /24 subnets
-  name                  = "MyVPC"
-  multi_nat             = false
-}
-```
 
 <!--- BEGIN_TF_DOCS --->
 
@@ -133,8 +115,6 @@ module "network" {
 <!--- END_TF_DOCS --->
 
 ## Authors
-
-Module managed by [DNX Solutions](https://github.com/DNXLabs).
 
 ## License
 
